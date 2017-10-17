@@ -12,11 +12,11 @@ PROVIDES = "virtual/libgles2 \
 
 RPROVIDES_${PN} += "libgles2 egl"
 
-COMPATIBLE_MACHINE = "raspberrypi"
+COMPATIBLE_MACHINE = "^rpi$"
 
 SRCBRANCH = "master"
 SRCFORK = "raspberrypi"
-SRCREV = "50d3cb5f4ee95a9513bb9f94d661947e9e6ac085"
+SRCREV = "3caf0cd4a61f46b71eff49422c36e1cd2727ab45"
 
 SRC_URI = "\
     git://github.com/${SRCFORK}/userland.git;protocol=git;branch=${SRCBRANCH} \
