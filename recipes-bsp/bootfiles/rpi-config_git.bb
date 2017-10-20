@@ -22,6 +22,8 @@ PITFT35r="${@bb.utils.contains("MACHINE_FEATURES", "pitft35r", "1", "0", d)}"
 
 VC4GRAPHICS="${@bb.utils.contains("MACHINE_FEATURES", "vc4graphics", "1", "0", d)}"
 VC4DTBO_raspberrypi3-64 = "vc4-fkms-v3d"
+VC4DTBO_raspberrypi-cm3-64 = "vc4-fkms-v3d"
+
 VC4DTBO ?= "vc4-kms-v3d"
 inherit deploy
 
