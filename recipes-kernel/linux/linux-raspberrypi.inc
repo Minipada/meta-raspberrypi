@@ -158,11 +158,6 @@ do_configure_prepend() {
 }
 
 do_compile_append_raspberrypi3-64() {
-    cc_extra=$(get_cc_option)
-    oe_runmake dtbs CC="${KERNEL_CC} $cc_extra " LD="${KERNEL_LD}" ${KERNEL_EXTRA_ARGS}
-}
-
-do_compile_append_raspberrypi3-64() {
     oe_runmake dtbs
 }
 
